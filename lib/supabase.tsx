@@ -2,8 +2,8 @@ import type { Database } from "../database.types";
 import { createClient } from "@supabase/supabase-js";
 
 export const client = createClient<Database>(
-  process.env.NEXT_PUBLIC_SUPABASE_URL ?? "",
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? ""
+  process.env.NEXT_PUBLIC_SUPABASE_URL ?? "https://eluizbgtbizpeinyirzv.supabase.co",
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY ?? "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVsdWl6Ymd0Yml6cGVpbnlpcnp2Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTcwMTc1MjgwMiwiZXhwIjoyMDE3MzI4ODAyfQ._3-bTvf_AjEXo3J3hZIznSQQyNoE875dMvbIqm2Lu04"
 );
 
 type Endpoint = {
